@@ -32,8 +32,6 @@ export class AppController {
   @UseGuards(LocalAuthGuard)
   @Post('auth/login')
   async login(@Body() user: { email: string; password: string }) {
-    // Sleep for .5 seconds to avoid brute force attacks
-    await new Promise((resolve) => setTimeout(resolve, 500));
     return this.authService.login(user);
   }
 
