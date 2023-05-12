@@ -1,4 +1,4 @@
-# Daigis Api
+# Api
 @url = http://localhost:8080/
 
 // Change the auth token with the one you get from the login request
