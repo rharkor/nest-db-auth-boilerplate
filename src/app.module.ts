@@ -15,13 +15,13 @@ import { BACKHEALTH_API_KEY, ENVIRONMENT, PROJECT_NAME } from './config';
 
 @Module({
   imports: [
+    AuthModule,
     ...configurations,
     PerformanceMonitorModule.forRoot({
       apiKey: BACKHEALTH_API_KEY,
       projectName: PROJECT_NAME,
       environment: ENVIRONMENT,
     }),
-    AuthModule,
     CronModule,
   ],
   controllers: [AppController],

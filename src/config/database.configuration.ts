@@ -6,5 +6,5 @@ export default () => ({
     : 5432,
   db_user: process.env.DATABASE_USER || 'root',
   db_pass: process.env.DATABASE_PASS || 'root',
-  db_name: process.env.DATABASE_NAME || 'todo',
+  db_name: process.env.DATABASE_NAME || 'basic',
 });
